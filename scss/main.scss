@@ -1,0 +1,26 @@
+@import "./base/03-default";
+
+/* ------------------- LIBS -------------------- */
+// @import "./libs/swiper";
+
+/* ------------------- COMPONENTS -------------------- */
+// @import "./components/";
+@import "./components/btn-top";
+@import "./components/btn";
+@import "./components/btn-burger";
+@import "./components/checkbox";
+@import "./components/form-input";
+@import "./components/form";
+@import "./components/modal";
+
+/* ------------------- BLOCKS -------------------- */
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/hero";
+@import "./blocks/about";
+@import "./blocks/steps";
+@import "./blocks/reviews";
+
+/* ------------------- PAGES -------------------- */
+@import "./pages/register";
+@import "./pages/order";

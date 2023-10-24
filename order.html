@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Где Моя Семья - мобильный GPS локатор для всей семьи!</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script defer src="js/modernizr-webp.js"></script>
+	<script defer src="js/modals.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body bg-map">
+	<!-- #btnScrollTop -->
+	<button type="button" id="btnScrollTop" title="Наверх"></button>
+	<div class="page__wrapper">
+		<!-- Header -->
+		<header class="header header-page">
+			<div class="container header__container">
+				<a href="./" class="header__logo logo">
+					<img class="logo__icon" src="./img/logo-icon.svg" width="64" height="64" alt="">
+					<span class="logo__name">Где <br>Моя Семья</span>
+				</a>
+				<button type="button" class="btn btn-stroke header__login js-modal-btn" data-modal-open="modalLogin">
+					<i class="header__login-icon"></i>
+					<span class="header__login-label">Войти</span>
+				</button>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<main class="page__main">
+			<div class="section order">
+				<div class="container">
+					<div class="order__box">
+						<div class="order__img">
+							<picture>
+								<source srcset="./img/about-phone.webp" type="image/webp">
+								<img loading="lazy" src="./img/about-phone.jpg" class="" width="" height="" alt="">
+							</picture>
+						</div>
+						<form action="#" class="form form-order">
+							<div class="form__header text-center">
+								<h3 class="form__title">Получите доступ к моб. приложению <span class="text-accent">«Где Моя Семья»</span></h3>
+								<p class="form__descr">Укажите ваш номер телефона, оплатите 1 рубль и получите ссылку на скачивание приложения.</p>
+							</div>
+							<div class="form__body">
+								<input type="text" name="phone" class="form-input input-phone" placeholder="Введите номер телефона" autocomplete="off"
+									required>
+								<input type="submit" class="btn form__btn" value="Получить доступ">
+							</div>
+							<div class="form__footer">
+								<label class="check form__check form__privacy" for="privacy">
+									<input class="check__input" type="checkbox" name="privacy" id="privacy" checked>
+									<span class="check__box"></span>
+									<span class="check__label">Нажимая кнопку "Оплатить", я принимаю условия <a href="./sogl.pdf">Соглашение
+											об использовании платной подписки</a></span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- footer__top -->
+			<div class="footer__top">
+				<div class="container footer__top-container">
+					<ul class="footer__list">
+						<li>2023 ИП Романов Денис Владимирович</li>
+						<li>ИНН: 333356620555</li>
+						<li>ОГРНИП: 333784700025149</li>
+					</ul>
+
+					<ul class="footer__list">
+						<li>Телефон: <a href="tel:+7">+7 (499) 226-15-47</a></li>
+						<li>Email: <a href="mailto:support@horoscoper">support@horoscoper.ru</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+						<li><a href="./oferta.pdf" target="_blank">Оферта</a></li>
+						<li><a href="./sogl.pdf" target="_blank">Соглашение <br>об использовании платной подписки</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./tariffs.pdf" target="_blank">Тарифы</a></li>
+						<li class="footer__unsubscribe js-modal-btn" data-modal-open="modalUnsubscribe">Отменить подписку</li>
+					</ul>
+				</div>
+			</div>
+			<!-- footer__bottom -->
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<p class="footer__copyright">© Все права защищены 2023-2024.</p>
+					<div class="footer__payments">
+						<img loading="lazy" src="./img/footer-img_1.svg" width="232" height="32" alt="">
+						<img loading="lazy" src="./img/footer-img_2.svg" width="232" height="32" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal Unsubscribe -->
+	<div class="modal modal-form modal-unsubscribe" data-modal="modalUnsubscribe">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<div class="modal__header text-center">
+					<h3 class="modal__title">Вы действительно хотите отписаться?</h3>
+					<p class="modal__descr">Чтобы отписаться, введите ваш email адрес</p>
+				</div>
+				<form action="#" class="form-unsubscribe">
+					<input type="email" name="email-unsubscribe" class="form-input input-email" placeholder="Enter email address" autocomplete="off"
+						required="">
+					<div class="form-unsubscribe__btns">
+						<button type="button" class="btn form__btn unsubscribe-no">Нет, не отписываться</button>
+						<button type="submit" class="btn btn-stroke form__btn unsubscribe-yes">Да, отписаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Unsubscribe -->
+
+	<!-- Modal Login -->
+	<div class="modal modal-form modal-login" data-modal="modalLogin">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<!-- form-login -->
+				<form action="#" class="form form-login active" id="form-login">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Личный кабинет</h3>
+						<p class="form__descr">Для входа в личный кабинет, укажите Email адрес и пароль.</p>
+					</div>
+					<div class="form__body">
+						<div class=""></div>
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="password" name="password" class="form-input" placeholder="Введите пароль" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Войти">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Забыли пароль?</span>
+							<span class="form__link-btn" id="password-resset">Восстановить</span>
+						</div>
+					</div>
+				</form>
+				<!-- form-password -->
+				<form action="#" class="form form-login" id="form-password">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Восстановить пароль</h3>
+						<p class="modal__descr">Чтобы восстановить пароль, укажите ваш email адрес</p>
+					</div>
+					<div class="form__body">
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Восстановить">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Вспомнили пароль?</span>
+							<span class="form__link-btn" id="login-back">Войти</span>
+						</div>
+					</div>
+				</form>
+				<!-- / .form-login -->
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Login -->
+
+	<script>
+		/* ------------------- Phone mask -------------------- */
+		const maskInput = document.querySelector('.input-phone');
+		const maskOptions = {
+			mask: '+7(000) 000-00-00'
+		}
+		const mask = IMask(maskInput, maskOptions);
+	</script>
+</body>
+
+</html>

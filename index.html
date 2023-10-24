@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Где Моя Семья - мобильный GPS локатор для всей семьи!</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script defer src="js/modernizr-webp.js"></script>
+	<script defer src="js/modals.js"></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+	<div class="page__wrapper">
+		<!-- #btnScrollTop -->
+		<button type="button" id="btnScrollTop" title="Наверх"></button>
+
+		<!-- Header -->
+		<header class="header">
+			<div class="container header__container">
+				<a href="./" class="header__logo logo">
+					<img class="logo__icon" src="./img/logo-icon.svg" width="64" height="64" alt="">
+					<span class="logo__name">Где <br>Моя Семья</span>
+				</a>
+				<div class="header__right">
+					<!-- nav -->
+					<nav class="header__nav nav">
+						<ul class="header__menu menu">
+							<li><a class="menu__link" href="#about">О приложении</a></li>
+							<li><a class="menu__link" href="#steps">Как начать использовать</a></li>
+							<li><a class="menu__link" href="#reviews">Отзывы</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="btn btn-stroke header__login js-modal-btn" data-modal-open="modalLogin">
+						<i class="header__login-icon"></i>
+						<span class="header__login-label">Войти</span>
+					</button>
+					<button type="button" class="header__burger btn-burger" aria-label="Открыть меню"><span class="btn-burger__line"></span></button>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<main class="page__main">
+			<!-- Hero -->
+			<section class="hero" id="hero">
+				<div class="container hero__container">
+					<div class="hero__content">
+						<h1 class="title-h1 hero__title"><span class="text-accent">Где моя семья:</span> мобильный GPS локатор для всей семьи</h1>
+						<p class="hero__descr">Это мобильное приложение для отслеживания семьи и обмена местоположением, цель которого — сообщить семье
+							о местоположении и безопасности в реальном времени, даже если они не могут ответить на ваш звонок.</p>
+						<a href="./registration.html" class="btn hero__btn">Получить доступ</a>
+						<ul class="hero__rating rating">
+							<li class="rating__item">
+								<div class="rating__item-top">
+									<i class="ic-star"></i>
+									<span class="rating__number">4.8</span>
+								</div>
+								<p class="rating__text">AppStore</p>
+							</li>
+							<li class="rating__item">
+								<div class="rating__item-top">
+									<i class="ic-star"></i>
+									<span class="rating__number">4.9</span>
+								</div>
+								<p class="rating__text">Google Play</p>
+							</li>
+							<li class="rating__item">
+								<div class="rating__item-top">
+									<i class="ic-star"></i>
+									<span class="rating__number">5.0</span>
+								</div>
+								<p class="rating__text">AppGallery</p>
+							</li>
+						</ul>
+					</div>
+					<div class="hero__img">
+						<picture>
+							<source srcset="./img/hero-phone.webp" type="image/webp">
+							<img class="img-transanim" loading="lazy" src="./img/hero-phone.png.jpg" width="635" height="549" alt="">
+						</picture>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section class="section about" id="about">
+				<div class="container about__container">
+					<h2 class="title-h2 about__title text-center">Возможности моб. приложения <br> <span>«Где Моя Семья»</span></h2>
+
+					<div class="about__grid">
+						<ul class="about__advantages advantages advantages-list1">
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_1.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">Геолокация по GPS</h3>
+									<p class="advantages__text">Отслеживайте, где находятся ваши дети в режиме реального времени.</p>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_2.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">История перемещений</h3>
+									<p class="advantages__text">Благодаря удобному GPS-трекеру вы всегда будуте знать где ваши близкие.</p>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_3.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">Звук вокруг</h3>
+									<p class="advantages__text">Функция обратный звонок помогут всегда знать, что происходит рядом с ребёнком.</p>
+								</div>
+							</li>
+						</ul>
+						<div class="about__img">
+							<picture>
+								<source srcset="./img/about-phone.webp" type="image/webp">
+								<img loading="lazy" src="./img/about-phone.jpg" width="384" height="528" alt="">
+							</picture>
+						</div>
+						<ul class="about__advantages advantages advantages-list2">
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_4.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">Родительский контроль</h3>
+									<p class="advantages__text">Будьте в курсе того, что ваши дети прибыли в школу, домой или в любую другую часто посещаемую
+										точку.</p>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_5.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">Уведомления</h3>
+									<p class="advantages__text">Получайте регулярные уведомления о местонахождении ваших близких.</p>
+								</div>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__img">
+									<img class="advantages__icon" loading="lazy" src="./img/icons/ic-adv_6.svg" width="32" height="32" alt="">
+								</div>
+								<div class="advantages__item-body">
+									<h3 class="advantages__title">Контроль заряда батареи</h3>
+									<p class="advantages__text">Вы получите уведомление, когда детскому гаджету потребуется пополнить запас энергии.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Steps -->
+			<section class="section steps" id="steps">
+				<div class="container">
+					<h2 class="title-h2 text-center">Как начать использовать <br> приложение <span class="text-accent">«Где Моя Семья»</span></h2>
+					<ul class="list-reset steps__list">
+						<li class="steps__item">
+							<img class="steps__icon" loading="lazy" src="./img/icons/ic-step_1.svg" width="48" height="" alt="48">
+							<h3 class="item-title">Регистрирация</h3>
+							<p class="item-text">Проходите регистрацию на нашем сайте</p>
+						</li>
+						<li class="steps__item">
+							<img class="steps__icon" loading="lazy" src="./img/icons/ic-step_2.svg" width="48" height="" alt="48">
+							<h3 class="item-title">Оплата</h3>
+							<p class="item-text">Оплачиваете 1 рубль за мобильное приложение</p>
+						</li>
+						<li class="steps__item">
+							<img class="steps__icon" loading="lazy" src="./img/icons/ic-step_3.svg" width="48" height="" alt="48">
+							<h3 class="item-title">Доступ</h3>
+							<p class="item-text">Получаете ссылку в СМС на скачивание мобильного приложения</p>
+						</li>
+						<li class="steps__item">
+							<img class="steps__icon" loading="lazy" src="./img/icons/ic-step_4.svg" width="48" height="" alt="48">
+							<h3 class="item-title">Использование</h3>
+							<p class="item-text">Отлеживаете локацию и все перемещения вашей семьи через приложение</p>
+						</li>
+					</ul>
+					<div class="sect-btn">
+						<a href="./registration.html" class="btn hero__btn">Получить доступ</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Reviews -->
+			<section class="section reviews" id="reviews">
+				<div class="container">
+					<h2 class="title-h2 text-center reviews__title">Реальные истории родителей</h2>
+					<!-- Slider -->
+					<div class="reviews-wrapper">
+						<div class="swiper-container reviews__slider">
+							<div class="swiper-wrapper">
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_1.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Ирина 37 лет / г.Москва</span>
+											<h3 class="reviews__item-title">Отличное приложение для моей семьи!</h3>
+											<p class="reviews__item-text">Мобильное приложение Где Моя Семья позволяет мне быть в курсе местоположения моих детей
+												в
+												реальном времени. Я, как мать, могу
+												легко отслеживать их перемещения и знать, что они в безопасности. Функция "Звук вокруг" дает мне уверенность, что я
+												всегда
+												могу
+												услышать, что происходит вокруг моей дочери. Уведомления о входе и выходе из зон доступа также очень полезны.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_2.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Марина 35 лет / г.Воронеж</span>
+											<h3 class="reviews__item-title">Надежный родительский контроль и уведомления для покоя родителей!</h3>
+											<p class="reviews__item-text">Это приложение настоящее спасение для родителей. Я могу установить границы безопасности
+												и
+												получать мгновенные
+												уведомления, если моя дочь покидает безопасные зоны. Родительский контроль также позволяет мне ограничивать
+												использование
+												определенных
+												функций на ее устройстве, обеспечивая ей безопасность и заботу.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_3.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Семен 26 лет / г.Санкт-Петербург</span>
+											<h3 class="reviews__item-title">Удобство использования и полный контроль!</h3>
+											<p class="reviews__item-text">Где Моя Семья предоставляет мне удобный способ отслеживать моего сына в реальном
+												времени. Я могу
+												легко
+												проверить заряд батареи его устройства и быть уверенным, что он всегда на связи. Интуитивный интерфейс делает
+												использование
+												этого
+												приложения максимально простым и удобным.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_4.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Татьяна 28 лет / г.Москва</span>
+											<h3 class="reviews__item-title">Отличное приложение для заботливых родителей!</h3>
+											<p class="reviews__item-text">Это приложение дает мне уверенность, что моя дочь в безопасности. Я могу отслеживать ее
+												местоположение,
+												проверять историю перемещений и даже слушать, что происходит вокруг нее. Уведомления об изменении заряда батареи и
+												входе/выходе из зон
+												доступа являются отличными функциями для поддержания контроля и покоя души.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_5.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Артем 42 года / г.Урюпинск</span>
+											<h3 class="reviews__item-title">Надежный способ следить за семьей в реальном времени для матерей!</h3>
+											<p class="reviews__item-text">Где Моя Семья позволяет мне быть всегда на связи с моими детьми. Я могу легко
+												отслеживать их
+												перемещения, а
+												функция звука вокруг дает мне возможность слышать окружающие звуки, что очень важно для безопасности моих детей.
+												Родительский контроль
+												и уведомления об изменении заряда батареи делают это приложение идеальным выбором для заботливых матерей.</p>
+										</div>
+									</div>
+								</div>
+								<!-- Отзыв -->
+								<div class="swiper-slide">
+									<div class="reviews__item">
+										<img class="reviews__item-photo" src="./img/reviews/rev-photo_6.jpg" width="104" height="104" alt="">
+										<div class="reviews__item-body">
+											<span class="reviews__item-name">Мария 48 лет / г.Саратов</span>
+											<h3 class="reviews__item-title">Неотъемлемый помощник для семейной безопасности!</h3>
+											<p class="reviews__item-text">Это приложение стало неотъемлемой частью нашей семейной жизни. Где Моя Семья
+												обеспечивает
+												надежный контроль
+												за нашими детьми, обеспечивая нам спокойствие и уверенность в их безопасности. Геолокация по GPS, история
+												перемещений,
+												функция звука
+												вокруг и родительский контроль работают отлично вместе, обеспечивая полный контроль и уверенность в безопасности
+												наших
+												детей.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-prev"></div>
+							<div class="swiper-next"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- footer__top -->
+			<div class="footer__top">
+				<div class="container footer__top-container">
+					<ul class="footer__list">
+						<li>2023 ИП Романов Денис Владимирович</li>
+						<li>ИНН: 333356620555</li>
+						<li>ОГРНИП: 333784700025149</li>
+					</ul>
+
+					<ul class="footer__list">
+						<li>Телефон: <a href="tel:+7">+7 (499) 226-15-47</a></li>
+						<li>Email: <a href="mailto:support@horoscoper">support@horoscoper.ru</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+						<li><a href="./oferta.pdf" target="_blank">Оферта</a></li>
+						<li><a href="./sogl.pdf" target="_blank">Соглашение <br>об использовании платной подписки</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./tariffs.pdf" target="_blank">Тарифы</a></li>
+						<li class="footer__unsubscribe js-modal-btn" data-modal-open="modalUnsubscribe">Отменить подписку</li>
+					</ul>
+				</div>
+			</div>
+			<!-- footer__bottom -->
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<p class="footer__copyright">© Все права защищены 2023-2024.</p>
+					<div class="footer__payments">
+						<img loading="lazy" src="./img/footer-img_1.svg" width="232" height="32" alt="">
+						<img loading="lazy" src="./img/footer-img_2.svg" width="232" height="32" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal Unsubscribe -->
+	<div class="modal modal-form modal-unsubscribe" data-modal="modalUnsubscribe">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<div class="modal__header text-center">
+					<h3 class="modal__title">Вы действительно хотите отписаться?</h3>
+					<p class="modal__descr">Чтобы отписаться, введите ваш email адрес</p>
+				</div>
+				<form action="#" class="form-unsubscribe">
+					<input type="email" name="email-unsubscribe" class="form-input input-email" placeholder="Enter email address" autocomplete="off"
+						required="">
+					<div class="form-unsubscribe__btns">
+						<button type="button" class="btn form__btn unsubscribe-no">Нет, не отписываться</button>
+						<button type="submit" class="btn btn-stroke form__btn unsubscribe-yes">Да, отписаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Unsubscribe -->
+
+	<!-- Modal Login -->
+	<div class="modal modal-form modal-login" data-modal="modalLogin">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<!-- form-login -->
+				<form action="#" class="form form-login active" id="form-login">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Личный кабинет</h3>
+						<p class="modal__descr">Для входа в личный кабинет, укажите Email адрес и пароль.</p>
+					</div>
+					<div class="form__body">
+						<div class=""></div>
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="password" name="password" class="form-input" placeholder="Введите пароль" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Войти">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Забыли пароль?</span>
+							<span class="form__link-btn" id="password-resset">Восстановить</span>
+						</div>
+					</div>
+				</form>
+				<!-- form-password -->
+				<form action="#" class="form form-login" id="form-password">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Восстановить пароль</h3>
+						<p class="modal__descr">Чтобы восстановить пароль, укажите ваш email адрес</p>
+					</div>
+					<div class="form__body">
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Восстановить">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Вспомнили пароль?</span>
+							<span class="form__link-btn" id="login-back">Войти</span>
+						</div>
+					</div>
+				</form>
+				<!-- / .form-login -->
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Login -->
+</body>
+
+</html>

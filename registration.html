@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+	<link rel="icon" type="image/png" href="./favicon/favicon.png">
+	<title>Где Моя Семья - мобильный GPS локатор для всей семьи!</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- JS -->
+	<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script defer src="js/modernizr-webp.js"></script>
+	<script defer src="js/modals.js"></script>
+	<script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body bg-map">
+	<!-- #btnScrollTop -->
+	<button type="button" id="btnScrollTop" title="Наверх"></button>
+	<div class="page__wrapper">
+		<!-- Header -->
+		<header class="header header-page">
+			<div class="container header__container">
+				<a href="./" class="header__logo logo">
+					<img class="logo__icon" src="./img/logo-icon.svg" width="64" height="64" alt="">
+					<span class="logo__name">Где <br>Моя Семья</span>
+				</a>
+				<button type="button" class="btn btn-stroke header__login js-modal-btn" data-modal-open="modalLogin">
+					<i class="header__login-icon"></i>
+					<span class="header__login-label">Войти</span>
+				</button>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<main class="page__main">
+			<div class="section register">
+				<div class="container">
+					<div class="register__inner">
+						<div class="swiper-container register__slider">
+							<div class="swiper-wrapper">
+								<!-- слайд-1 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-1.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-1.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Смотрите местоположение ребенка</h3>
+												<p class="register__item-descr">в реальном времени, даже если его нет рядом или он не берет трубку</p>
+											</div>
+											<div class="register__item-btns">
+												<a href="./order.html" class="btn btn-stroke register-skip">Пропустить</a>
+												<button class="btn register-next">Продолжить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- слайд-2 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-2.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-2.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Слушайте, что происходит вокруг ребенка</h3>
+												<p class="register__item-descr">когда он в школе или гуляет на улице, а вас нет рядом</p>
+											</div>
+											<div class="register__item-btns">
+												<a href="./order.html" class="btn btn-stroke register-skip">Пропустить</a>
+												<button class="btn register-next">Продолжить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- слайд-3 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-3.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-3.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Отправьте на телефон ребенка громкий сигнал</h3>
+												<p class="register__item-descr">если он не берет трубку или забыл где-то телефон</p>
+											</div>
+											<div class="register__item-btns">
+												<a href="./order.html" class="btn btn-stroke register-skip">Пропустить</a>
+												<button type="button" class="btn register-next">Продолжить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- слайд-4 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-4.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-4.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Получайте на свой телефон уведомления</h3>
+												<p class="register__item-descr">когда ребенок возвращается домой, чтобы не волновать его и не тревожить лишний раз
+													звонками
+												</p>
+											</div>
+											<div class="register__item-btns">
+												<a href="./order.html" class="btn btn-stroke register-skip">Пропустить</a>
+												<button type="button" class="btn register-next">Продолжить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- слайд-5 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-5.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-5.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Следите за зарядом батареи на телефоне своего ребенка</h3>
+												<p class="register__item-descr">и заряжайте телефон вовремя, чтобы ваш ребенок всегда оставался на связи</p>
+											</div>
+											<div class="register__item-btns">
+												<a href="./order.html" class="btn btn-stroke register-skip">Пропустить</a>
+												<button type="button" class="btn register-next">Продолжить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- слайд-6 -->
+								<div class="swiper-slide">
+									<div class="register__item">
+										<div class="register__item-img">
+											<picture>
+												<source srcset="./img/register/reg-slide_img-6.webp" type="image/webp">
+												<img src="./img/register/reg-slide_img-6.jpg" class="" width="" height="" alt="">
+											</picture>
+										</div>
+										<div class="register__item-body">
+											<div class="register__item-text">
+												<h3 class="register__item-title">Узнавайте чем занят ваш ребенок на уроках</h3>
+												<p class="register__item-descr">играет в телефон или учится</p>
+											</div>
+											<div class="register__item-btns">
+												<button class="btn btn-stroke register-prev">Назад</button>
+												<a href="./order.html" class="btn register-next">Получить доступ</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-prev"></div>
+						<div class="swiper-next"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<!-- footer__top -->
+			<div class="footer__top">
+				<div class="container footer__top-container">
+					<ul class="footer__list">
+						<li>2023 ИП Романов Денис Владимирович</li>
+						<li>ИНН: 333356620555</li>
+						<li>ОГРНИП: 333784700025149</li>
+					</ul>
+
+					<ul class="footer__list">
+						<li>Телефон: <a href="tel:+7">+7 (499) 226-15-47</a></li>
+						<li>Email: <a href="mailto:support@horoscoper">support@horoscoper.ru</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+						<li><a href="./oferta.pdf" target="_blank">Оферта</a></li>
+						<li><a href="./sogl.pdf" target="_blank">Соглашение <br>об использовании платной подписки</a></li>
+					</ul>
+
+					<ul class="footer__list">
+						<li><a href="./tariffs.pdf" target="_blank">Тарифы</a></li>
+						<li class="footer__unsubscribe js-modal-btn" data-modal-open="modalUnsubscribe">Отменить подписку</li>
+					</ul>
+				</div>
+			</div>
+			<!-- footer__bottom -->
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<p class="footer__copyright">© Все права защищены 2023-2024.</p>
+					<div class="footer__payments">
+						<img src="./img/footer-img_1.svg" width="232" height="32" alt="">
+						<img src="./img/footer-img_2.svg" width="232" height="32" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Modal Unsubscribe -->
+	<div class="modal modal-form modal-unsubscribe" data-modal="modalUnsubscribe">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<div class="modal__header text-center">
+					<h3 class="modal__title">Вы действительно хотите отписаться?</h3>
+					<p class="modal__descr">Чтобы отписаться, введите ваш email адрес</p>
+				</div>
+				<form action="#" class="form-unsubscribe">
+					<input type="email" name="email-unsubscribe" class="form-input input-email" placeholder="Enter email address" autocomplete="off"
+						required="">
+					<div class="form-unsubscribe__btns">
+						<button type="button" class="btn form__btn unsubscribe-no">Нет, не отписываться</button>
+						<button type="submit" class="btn btn-stroke form__btn unsubscribe-yes">Да, отписаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Unsubscribe -->
+
+	<!-- Modal Login -->
+	<div class="modal modal-form modal-login" data-modal="modalLogin">
+		<div class="modal__overlay">
+			<div class="modal__body">
+				<div class="modal__close"></div>
+				<!-- form-login -->
+				<form action="#" class="form form-login active" id="form-login">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Личный кабинет</h3>
+						<p class="form__descr">Для входа в личный кабинет, укажите Email адрес и пароль.</p>
+					</div>
+					<div class="form__body">
+						<div class=""></div>
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="password" name="password" class="form-input" placeholder="Введите пароль" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Войти">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Забыли пароль?</span>
+							<span class="form__link-btn" id="password-resset">Восстановить</span>
+						</div>
+					</div>
+				</form>
+				<!-- form-password -->
+				<form action="#" class="form form-login" id="form-password">
+					<div class="modal__header text-center">
+						<h3 class="modal__title">Восстановить пароль</h3>
+						<p class="modal__descr">Чтобы восстановить пароль, укажите ваш email адрес</p>
+					</div>
+					<div class="form__body">
+						<input type="email" name="email" class="form-input" placeholder="Введите Email адрес" autocomplete="off" required>
+						<input type="submit" class="btn form__btn" value="Восстановить">
+					</div>
+					<div class="form__footer">
+						<div class="form__link">
+							<span class="form__link-label">Вспомнили пароль?</span>
+							<span class="form__link-btn" id="login-back">Войти</span>
+						</div>
+					</div>
+				</form>
+				<!-- / .form-login -->
+			</div>
+		</div>
+	</div>
+	<!-- / Modal Login -->
+
+
+</body>
+
+</html>

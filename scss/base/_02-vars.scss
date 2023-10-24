@@ -1,0 +1,18 @@
+:root {
+  --wrapper-width: 1920px;
+  --container-width: 1200px;
+
+  --font-default: "Inter", sans-serif;
+  --fz-body: 18px;
+
+  --bg-body: #fef2e8;
+  --main-color: #72569d;
+  --accent-color: #fc667d;
+
+  --title-color: #1e144f;
+  --text-color: #5f5b73;
+
+  @media (max-width: 480px) {
+    --fz-body: 16px;
+  }
+}
